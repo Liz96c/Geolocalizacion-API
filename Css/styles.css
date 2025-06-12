@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1rem;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    align-items: center;
+    background-color: #1950af;
+    justify-content: center;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+
+}
+.container{
+    background-color: #209d56;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+div.BuscarIP {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1{
+    color: #ffd034
+}
+p{
+    color: white;
+}
+
+input{
+    border:5 px groove #ccc;
+    border-radius: 4px;
+    padding: 10 px;
+    margin: 10px 0;
+    width: calc(100%-22px);
+}
+button{
+    background-color: #ffd034;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #1950af;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+button:hover {
+    background-color: gray;
+}
+#MostrarInfo{
+    display: flex;
+    margin-top: 20px;
+    background-color: #4672f4;
+    text-align: justify;
+    align-content: center;
+    align-items: center;
+    
+    
+}
+footer{
+    width: 100%;
+}
+footer div{
+    display: flex;
+    
+}
+
+#MostrarInfo p{
+    font-size: 16px;
+    color: #000000;
+}
+
+@media (min-width: 460px){
+    .container {
+        width: 100%;
+        flex-direction: column;
+    
+    }
+    
+    
+    }
+    @media (min-width: 768px){
+        .container {
+            flex-direction: column;
+            max-width: 90%;
+            margin: auto;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            
+        }
+        div.BuscarIP{
+            display: flex;
+            flex-direction: row;
+        }
+        
+    }
